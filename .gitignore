@@ -8,11 +8,6 @@ This is a basic Java middleware project that allows multiple clients to send and
 - The server relays messages from one client to all other connected clients.
 - Clients can disconnect by sending an "exit" message.
 
-## Folder Structure
-
-- The **[Source Code](./source_code/)** folder contains Java code related to the mentioned project.
-- In the **[Output Test](./output_testes/)** folder, you will find some images of the server and client output, where we tested the application to verify if it was working correctly.
-
 ## Usage
 
 ### Server

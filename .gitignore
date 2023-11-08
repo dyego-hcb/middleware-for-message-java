@@ -1,29 +1,75 @@
-# Simple Java Middleware for Message Passing
+# Mac OSX aux files
+.DS_Store
+**/.DS_Store
 
-This is a basic Java middleware project that allows multiple clients to send and receive messages through a central server. It provides a simple way for clients to communicate with each other via a server acting as a message relay.
+third-party-open-source-licenses.txt
+**/third-party-open-source-licenses/**
+nohttp-cli-*.jar
 
-## Features
+unpack/
 
-- Clients can connect to the server and send messages.
-- The server relays messages from one client to all other connected clients.
-- Clients can disconnect by sending an "exit" message.
+## Java
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
 
-## Usage
+## Eclipse
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.factorypath
 
-### Server
+## Visual Studio Code
+.vscode/
+.code-workspace
 
-1. Compile the `MiddlewareServer.java` file using `javac MiddlewareServer.java`.
-2. Run the server with `java MiddlewareServer`.
+*\~
+*.class
+**/classpath.txt
+**/.idea
+**/*.iml
+**/*.versionsBackup
 
-The server will listen for incoming connections on port 12345 by default. You can modify the port in the source code if needed.
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-### Client
+# Package Files #
+**/target/*.jar
+**/jars/*.jar
+eclipse-language-servers/**/*.jar
+*.war
+*.ear
+**/.sts4-cache/*
+**/test-projects/**/*.classpath
+**/test-projects/**/*.vscode
+**/test-projects/**/*.project
+**/test-projects/**/*.settings
+**/test-projects/**/*.springBeans
 
-1. Compile the `Client.java` file using `javac Client.java`.
-2. Run a client with `java Client`.
+# Exceptions
+!**/.mvn/wrapper/maven-wrapper.jar
+!**/jdt-ls-extension/**/test-projects/**/.classpath
+!**/jdt-ls-extension/**/test-projects/**/.project
+!**/jdt-ls-extension/**/test-projects/**/.settings
 
-Clients will connect to the server and can start sending and receiving messages. To exit a client, simply send "exit."
+# virtual machine crash logs, see https://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
-## Dependencies
-
-This project does not require any external dependencies. It uses Java's built-in `java.net` package for socket communication.
+servers/
+target/
+bin/
+*.log
